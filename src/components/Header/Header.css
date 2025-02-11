@@ -1,0 +1,152 @@
+/* Contenedor principal del header */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Contenedor interno */
+.container {
+  display: flex;
+  padding-right: 25px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 11rem; /* Ajusta el tamaño del logo */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Botón de menú (ícono de hamburguesa) */
+.menu-icon {
+  display: none; /* Oculto por defecto */
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 1100;
+  color: #1a202c;
+}
+
+/* Navegación */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Lista de enlaces */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Estilo de enlaces */
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #1a202c;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f97316;
+}
+.dropdown {
+  position: relative; /* Necesario para que el dropdown se posicione en relación con su padre */
+}
+/* Dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Justo debajo del botón de Pages */
+  left: 0; /* Alineado con el borde izquierdo del padre */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  list-style: none;
+  padding: 1rem 0;
+  min-width: 200px; /* Ancho del menú desplegable */
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #1a202c;
+  font-size: 1rem;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #f97316;
+  color: #ffffff;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Mostrar el botón de menú */
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculto fuera de la pantalla */
+    height: 100%;
+    width: 70%; /* Ancho del menú lateral */
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.6s ease-in-out;
+  }
+
+  .nav-open {
+    display: flex;
+    justify-content:right;
+    padding-left: 15px;
+    right: 0; /* Muestra el menú lateral */
+  }
+
+  .nav-links {
+    padding-left: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.29rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+}

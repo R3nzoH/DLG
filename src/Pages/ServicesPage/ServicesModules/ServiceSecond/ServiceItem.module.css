@@ -1,0 +1,53 @@
+.serviceItem {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .serviceItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .serviceIcon {
+    font-size: 2.5rem;
+    color: #FF6A00;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .serviceTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .serviceDescription {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .serviceItem {
+      padding: 1rem;
+    }
+  
+    .serviceIcon {
+      font-size: 2rem;
+    }
+  
+    .serviceTitle {
+      font-size: 1.2rem;
+    }
+  
+    .serviceDescription {
+      font-size: 0.9rem;
+    }
+  }
+  

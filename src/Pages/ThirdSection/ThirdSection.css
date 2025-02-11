@@ -1,0 +1,120 @@
+/* Sección Principal */
+.third-section {
+  width: 100%;
+  padding: 4rem 0rem;
+  background: linear-gradient(135deg, #f97316 30%, #1a202c 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor Principal */
+.third-section .section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Para mejor ajuste en pantallas pequeñas */
+}
+
+/* Título y subtítulo */
+.third-section .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.third-section .highlight {
+  color: black;
+}
+
+.third-section .section-subtitle {
+  font-size: 1.1rem;
+  color: #fefefe;
+  margin-bottom: 3rem;
+}
+
+/* Diseño general */
+.third-section .service-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid de servicios */
+.third-section .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem; /* Ajuste extra para dispositivos pequeños */
+}
+
+/* Tarjeta de cada servicio */
+.third-section .service-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.third-section .service-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos */
+.third-section .service-icon {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.third-section .service-item:hover .service-icon {
+  color: #ffffff;
+}
+
+/* Títulos de servicio */
+.third-section .service-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Descripción de servicio */
+.third-section .service-description {
+  font-size: 1rem;
+  color: #fefefe;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 1024px) {
+  .third-section .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .third-section .services-grid {
+    grid-template-columns: 1fr;
+    gap: 5vw;
+  }
+
+  /* Mejorar la experiencia en pantallas táctiles */
+  .third-section .service-item {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}

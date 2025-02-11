@@ -1,0 +1,141 @@
+.fourth-section {
+  position: relative;
+  background-color: #f9fafb;
+  padding: 5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Imagen de fondo para móviles */
+.fourth-section__background-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/Services/serviceConca.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Contenedor general */
+.fourth-section__container {
+  max-width: 1200px;
+  display: flex;
+
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* Imagen en pantallas grandes */
+.fourth-section__image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.fourth-section__image-overlay {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fourth-section__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 12px;
+}
+
+/* Contenedor naranja */
+.fourth-section__orange-box {
+  background: #f97316;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos y textos */
+.fourth-section__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.fourth-section__text {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.fourth-section__highlight {
+  font-weight: 600;
+  color: #fffae3;
+}
+
+/* Cuadros de estadísticas */
+.fourth-section__stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.fourth-section__stat-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 180px;
+}
+
+.fourth-section__stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f97316;
+}
+
+.fourth-section__stat-label {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  /* Imagen como fondo en móviles */
+  .fourth-section__background-image {
+      display: block;
+  }
+
+  /* Ocultar la imagen normal en móviles */
+  .fourth-section__image-container {
+      display: none;
+  }
+
+  /* Ajustes del contenedor naranja en móviles */
+  .fourth-section__orange-box {
+      padding: 2rem;
+  }
+
+  /* Cambiar color de métricas a blanco */
+  .fourth-section__stat-number {
+      color:#f97316;
+  }
+}

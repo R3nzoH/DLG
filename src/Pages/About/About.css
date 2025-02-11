@@ -1,0 +1,428 @@
+/* 🔹 CONTENEDOR PRINCIPAL */
+.nosotros-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+  }
+  
+  /* 🔹 SECCIÓN 1: QUIÉNES SOMOS */
+  .nosotros-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/puerto/imgAbout.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .nosotros-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 55px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 5rem;
+    color: #fff;
+  }
+  
+  .nosotros-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f97316;
+  }
+  
+  .nosotros-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .nosotros-text strong {
+    color: #f97316;
+  }
+  
+  /* 🔹 SECCIÓN 2: MISIÓN, VISIÓN Y FILOSOFÍA */
+  .mission-vision-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 80px 40px ;
+  }
+  
+  /* 🔹 IMAGEN */
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .worker-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🔹 CONTENEDOR DE TARJETAS */
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#f97316;
+    text-align: left;
+  }
+  
+  /* 🔹 TARJETAS DE MISIÓN, VISIÓN Y FILOSOFÍA */
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 2rem 5rem;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  .card:hover,
+.card:hover {
+  background-color:#e65b00; /* Azul oscuro */
+  color: #ffffff;
+}
+
+.card:hover h3,
+.card:hover h3 {
+  color:#2c3e50; /* Amarillo */
+}
+
+.card:hover p,
+.card:hover p {
+  color: #ffffff;
+}
+
+.card:hover .icon,
+.card:hover .icon {
+  color: #2c3e50; /* Amarillo */
+}
+
+  /* ICONOS */
+  .icon {
+    color: #f97316;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* TEXTO */
+  .card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .card p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 300px;
+  }
+  
+  /* 🔹 SECCIÓN 3: SERVICIOS */
+  .services-section {
+    width: 100%;
+    padding: 80px 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .services-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 50px;
+  }
+  
+  /* TEXTO */
+  .services-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .services-text h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .services-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* BOTÓN */
+  .btn-more {
+    background: #f97316;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-more:hover {
+    background: #e65b00;
+  }
+  
+  /* 🔹 TARJETAS DE SERVICIOS */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+  }
+  
+  /* TARJETAS */
+  .service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .team-section {
+    background: #ff8200; /* Fondo ligero */
+    padding: 60px 100%;
+    text-align: center;
+  }
+  .team-section .section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333; /* Naranja corporativo */
+    margin-bottom: 20px;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .team-member:hover {
+    transform: translateY(-5px); /* Efecto hover */
+  }
+  .team-member h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .team-member::before {
+    content: "👤"; /* Ícono de persona */
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0.3;
+  }
+  
+  .team-member .role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff8200; /* Color naranja */
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  .team-member .role::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff8200;
+    margin: 5px auto 10px;
+  }
+  /* ICONOS */
+  .icon-service {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    color: #f97316;
+  }
+  .team-member .description {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  /* TÍTULOS */
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* TEXTO */
+  .service-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  .team-member .responsibility {
+    font-size: 0.85rem;
+    color: #e65b00;
+    font-style: italic;
+    margin-top: auto;
+    background: rgba(255, 130, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    align-self: stretch;
+    text-align: center;
+  }
+  /* 🔹 RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
+    .mission-vision-container,
+    .services-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .services-text {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-container {
+      order: 2;
+    }
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+  
+    .team-member {
+      padding: 15px;
+    }
+  
+    .team-member h3 {
+      font-size: 1.2rem;
+    }
+  
+    .team-member .role {
+      font-size: 0.95rem;
+    }
+  
+    .team-member .description {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nosotros-title {
+      font-size: 2.2rem;
+    }
+  
+    .nosotros-text {
+      font-size: 1.2rem;
+    }
+  
+    .services-text h2 {
+      font-size: 2rem;
+    }
+    .nosotros-text:nth-of-type(3) {
+      display: none;
+    }
+    .services-text p {
+      font-size: 1.1rem;
+    }
+  
+    .btn-more {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+    .team-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 columna */
+    }
+  
+    .team-member {
+      text-align: center;
+      align-items: center;
+    }
+  
+    .team-member::before {
+      display: none; /* Ocultar icono en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+    .team-section {
+      padding: 40px 10px; /* Menos padding */
+    }
+  
+    .team-section .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .team-member {
+      padding: 10px;
+      border-radius: 6px;
+    }
+  
+    .team-member h3 {
+      font-size: 1.1rem;
+    }
+  
+    .team-member .role {
+      font-size: 0.9rem;
+    }
+  
+    .team-member .description {
+      font-size: 0.8rem;
+    }
+  }
+  
