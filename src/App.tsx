@@ -7,6 +7,8 @@ import About from "./Pages/About/About"
 import Contact from "./Pages/Contact/Contact"
 import Services from "./Pages/ServicesPage/Services";
 import Faq from "./Pages/FAQ/fqs"
+import "./index.css"; // O el archivo donde tengas los estilos globales
+
 const addFontLink = () => {
   const link = document.createElement("link");
   link.href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap";
